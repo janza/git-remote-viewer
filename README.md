@@ -6,7 +6,9 @@ Supported services: bitbucket.org, github.com, gitlab.com
 
 ### Installation
 
+```
 sudo mv git-view /usr/local/bin/git-view
+```
 
 ### Usage
 
