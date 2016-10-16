@@ -1,6 +1,6 @@
 # Git remote viewer
 
-Opens specified file in web viewer of used git service.
+Opens specified file in web interface of remote git service.
 
 Supported services: bitbucket.org, github.com, gitlab.com
 
@@ -12,4 +12,10 @@ sudo mv git-view /usr/local/bin/git-view
 
 ```
 git view file [linenumber]
+```
+
+Bonus vim mapping that opens currently selected line in the browser:
+
+```
+nmap gv :execute "!git-view % " . line(".")<CR>
 ```
