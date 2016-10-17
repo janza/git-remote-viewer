@@ -58,7 +58,7 @@ function get_service_used {
     for service in $services_list; do
         if git remote -v | grep -q "$service"; then
             echo "$service"
-            break
+            return
         fi
     done
 
