@@ -31,7 +31,7 @@ function get_repo_relative_file_path {
 }
 
 function get_remote_repo_base_path {
-    git remote -v | grep -oE "$1"'.[[:alnum:]\.@\:/\-~]+' | cut -d ':' -f 2 | sed "s/$1.//" | sed 's/\.git//' | head -1
+    git remote -v | grep -oP "$1"'.[[:alnum:]\.@\:/\-~]+' | cut -d ':' -f 2 | sed "s/$1.//" | sed 's/\.git//' | head -1
 }
 
 function get_remote_url {
