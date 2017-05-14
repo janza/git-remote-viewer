@@ -48,7 +48,7 @@ function get_remote_url {
     if [ "$service" == "bitbucket.org" ]; then
         echo "https://bitbucket.org/$repo/src/$branch/$file_path#-$line_number"
     elif [ "$service" == "github.com" ]; then
-        echo "https://github.com/$repo/blob/$branch/$file_path#$line_number"
+        echo "https://github.com/$repo/blob/$branch/$file_path#L$line_number"
     elif [ "$service" == "gitlab.com" ]; then
         echo "https://gitlab.com/$repo/blob/$branch/$file_path"
     fi
